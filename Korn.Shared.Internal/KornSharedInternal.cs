@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Korn.Shared.Internal
+﻿namespace Korn.Shared.Internal
 {
     public static class KornSharedInternal
     {

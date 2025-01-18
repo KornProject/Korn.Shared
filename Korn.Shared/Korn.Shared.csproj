@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Korn.Logger\Korn.Logger\Korn.Logger.csproj" />
     <ProjectReference Include="..\Korn.Shared.Internal\Korn.Shared.Internal.csproj" />
   </ItemGroup>
 
