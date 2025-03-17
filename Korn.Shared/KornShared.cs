@@ -6,14 +6,16 @@ namespace Korn.Shared
 {
     public static class KornShared
     {
+        static KornShared() => BaseKornException.BindLogger(Logger);
+
+        public const string
+            Net8TargetVersion = KornSharedInternal.Net8TargetVersion,
+            Net472TargetVersion = KornSharedInternal.Net472TargetVersion,
+            CurrentTargetVersion = KornSharedInternal.CurrentTargetVersion;
+
         public const string RootDirectory = KornSharedInternal.RootDirectory;
         public static readonly Random Random = new Random();
-        public static readonly KornLogger Logger = new KornLogger(Korn.Interface.SharedData.LogFile);
+        public static readonly KornLogger Logger = new KornLogger(Korn.Interface.KornDirectory.LogFile);
         public static readonly JsonSerializerSettings JsonSettings = KornSharedInternal.JsonSettings;
-
-        static KornShared()
-        {
-            BaseKornException.BindLogger(Logger);
-        }
     }
 }
