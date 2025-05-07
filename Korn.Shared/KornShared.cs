@@ -14,6 +14,7 @@ namespace Korn.Shared
             CurrentTargetVersion = KornSharedInternal.CurrentTargetVersion;
 
         public const string RootDirectory = KornSharedInternal.RootDirectory;
+        public static readonly string[] TargetVersions = KornSharedInternal.TargetVersions;
         public static readonly Random Random = new Random();
         public static readonly KornLogger Logger = new KornLogger(Korn.Interface.KornDirectory.LogFile);
         public static readonly JsonSerializerSettings JsonSettings = KornSharedInternal.JsonSettings;
