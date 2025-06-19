@@ -1,4 +1,4 @@
-﻿using Korn.Shared.Internal;
+﻿using Korn.Logger;
 using Newtonsoft.Json;
 using System;
 
